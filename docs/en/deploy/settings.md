@@ -110,6 +110,8 @@ vdb:
     # Supported vector databases:
     # - chroma (default, embedded vector database)
     # - qdrant (external vector database, please configure below)
+    # - milvus (scalable vector database, please configure below)
+    # - pgvector (PostgreSQL extension, please configure below)
     use: chroma
     # Qdrant configuration
     qdrant:
@@ -121,6 +123,17 @@ vdb:
         port: 6333
         # Qdrant API Key
         api_key: ''
+    # Milvus configuration
+    milvus:
+        uri: 'http://127.0.0.1:19530'
+        token: ''
+    # pgvector configuration
+    pgvector:
+        host: '127.0.0.1'
+        port: 5433
+        database: 'langbot'
+        user: 'postgres'
+        password: 'postgres'
 ```
 
 ## Set configuration via environment variables

@@ -108,17 +108,24 @@ vdb:
     # 支持的向量数据库：
     # - chroma（默认，嵌入式向量数据库）
     # - qdrant（外部向量数据库，请在下方配置）
+    # - milvus（可扩展的向量数据库，请在下方配置）
+    # - pgvector（PostgreSQL 扩展，请在下方配置）
     use: chroma
     # Qdrant 配置
     qdrant:
-        # Qdrant 的 URL
         url: ''
-        # Qdrant 的 Host
         host: localhost
-        # Qdrant 的 Port
         port: 6333
-        # Qdrant 的 API Key
         api_key: ''
+    milvus:
+        uri: 'http://127.0.0.1:19530'
+        token: ''
+    pgvector:
+        host: '127.0.0.1'
+        port: 5433
+        database: 'langbot'
+        user: 'postgres'
+        password: 'postgres'
 ```
 
 ## 通过环境变量设置
