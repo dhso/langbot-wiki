@@ -35,6 +35,9 @@ AI 能力主要分为两个部分，选择运行器和配置运行器参数。
 
 当使用外部 LLMOps 平台时，LangBot 会显式传入以下参数，您可以自行在 LLMOps 平台的开始节点中添加（下图以 Dify 为例）：
 
+- `launcher_type`：发起对象类型，私聊为 `person`，群聊为 `group`
+- `launcher_id`：发起对象ID，私聊为用户ID，群聊为群ID
+- `sender_id`：发送者ID
 - `user_message_text`：用户消息的纯文本
 - `session_id`：用户会话id，私聊为 `person_<id>`，群聊为 `group_<id>`
 - `conversation_id`：字符串，用户会话id，由 LangBot 生成。用户重置会话后，会重新生成
