@@ -46,7 +46,7 @@ When using external LLMOps platforms, LangBot explicitly passes the following pa
 
 You can [customize any variable through plugins](/en/plugin/dev/apis/common.html#set-request-variables).
 
-![Dify Workflow Start Node Configuration](/assets/image/en/workshop/dify-service-api/dify_workflow_var.png)
+![Dify Workflow Start Node Configuration](/assets/image/zh/workshop/dify-service-api/dify_workflow_var.png)
 
 ## Other Configurations
 
